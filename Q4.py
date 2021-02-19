@@ -33,7 +33,3 @@ class Solution:
             leng = leng
             med =  nums1[int(leng/2)]
         return math.ceil(med)
-
-if __name__ == '__main__':
-    so = Solution()
-    print(so.findMedianSortedArrays([1,3],[2]))
