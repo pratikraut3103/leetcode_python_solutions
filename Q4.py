@@ -22,14 +22,11 @@ class Solution:
     def findMedianSortedArrays(self, nums1, nums2) -> float:
         for _ in range(len(nums2)):
             nums1.append(nums2[_])
-        print(nums1)
         nums1.sort()
         leng = len(nums1)
         if leng % 2 ==0:
             print(leng)
             med = (nums1[int(leng/2)] + nums1[int((leng-1)/2)]) /2
-            print('1',nums1[int(leng/2)])
-            print('2',nums1[int((leng-1)/2)])
         else:
             leng = len(nums1)
             leng = leng
