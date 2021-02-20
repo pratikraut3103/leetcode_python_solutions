@@ -27,9 +27,15 @@ class Solution:
         leng = len(nums1)
         if leng % 2 ==0:
             print(leng)
-            med = (nums1[int(leng/2)] + nums1[int((leng+1)/2)]) / 2
+            med = (nums1[int(leng/2)] + nums1[int((leng-1)/2)]) /2
+            print('1',nums1[int(leng/2)])
+            print('2',nums1[int((leng-1)/2)])
         else:
             leng = len(nums1)
             leng = leng
             med =  nums1[int(leng/2)]
-        return math.ceil(med)
+        return med
+
+if __name__ == '__main__':
+    so = Solution()
+    print(so.findMedianSortedArrays([1,2],[3,4]))
