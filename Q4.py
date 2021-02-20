@@ -28,8 +28,6 @@ class Solution:
             print(leng)
             med = (nums1[int(leng/2)] + nums1[int((leng-1)/2)]) /2
         else:
-            leng = len(nums1)
-            leng = leng
             med =  nums1[int(leng/2)]
         return med
 
